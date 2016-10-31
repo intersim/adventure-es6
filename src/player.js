@@ -32,7 +32,9 @@ var play = function(node) {
     message: node.text,
     choices: node.connections
   }])
-  .then(answer => play(answer.node));
+  .then(function(answer) {
+    return play(answer.node)
+  });
 }
 
 play(game.startingPoint)
