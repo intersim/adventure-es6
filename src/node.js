@@ -1,5 +1,8 @@
 var Connection = require('./connection')
 
+// For more on ES6 classes: http://www.benmvp.com/learning-es6-classes/
+// For more on ES6 template literals: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
+
 class Node {
 	constructor (title, text) {
 		this.title = title;
